@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>DoBu Timetable - Class Schedule</title>
+    <meta name="description" content="View the weekly class timetable for DoBu Martial Arts including Karate, Judo, Jiu-Jitsu, Muay Thai, and kids classes." >
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="css/responsive.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" >
+</head>
+<body>
+
+    <!-- ===== HEADER / NAVIGATION ===== -->
+    <header class="header" >
+        <div class="container">
+            <div class="header-inner">
+                <!-- Logo -->
+                <a href="index.html" class="logo" aria-label="DoBu Martial Arts Home">
+                    <span class="logo-icon">🥋</span>
+                    <span class="logo-text">DoBu</span>
+                </a>
+
+                <!-- Navigation -->
+                <nav class="nav"  aria-label="Main Navigation">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="timetable.html" class="active">Timetable</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="instructors.html">Instructors</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Right Side: Login + Join Now -->
+                <div class="header-actions">
+                    <button class="search-toggle" aria-label="Search" aria-expanded="false">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <a href="login.html" class="btn btn-outline-light btn-sm">Login</a>
+                    <a href="membership.html" class="btn btn-primary btn-sm">Join Now</a>
+                    <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Class Timetable</h1>
+            <p>Find your class and start training</p>
+        </div>
+    </section>
+
+    <!-- ===== FILTERS ===== -->
+    <div class="timetable-filters section-small">
+        <div class="container">
+            <div class="filter-buttons" >
+                <button type="button" class="filter-btn active" data-filter="all" >All Classes</button>
+                <button type="button" class="filter-btn" data-filter="karate" >Karate</button>
+                <button type="button" class="filter-btn" data-filter="judo" >Judo</button>
+                <button type="button" class="filter-btn" data-filter="jiujitsu" >Jiu-Jitsu</button>
+                <button type="button" class="filter-btn" data-filter="muaythai" >Muay Thai</button>
+                <button type="button" class="filter-btn" data-filter="kids" >Kids</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== TIMETABLE ===== -->
+    <div class="timetable section" >
+        <div class="container">
+            <div class="timetable-wrapper">
+                <table class="timetable-table" role="grid" aria-label="Weekly class schedule">
+                    <thead>
+                        <tr>
+                            <th scope="col">Time</th>
+                            <th scope="col">Monday</th>
+                            <th scope="col">Tuesday</th>
+                            <th scope="col">Wednesday</th>
+                            <th scope="col">Thursday</th>
+                            <th scope="col">Friday</th>
+                            <th scope="col">Saturday</th>
+                            <th scope="col">Sunday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- 06:00 - 07:30 -->
+                        <tr>
+                            <td class="time-slot">06:00 - 07:30</td>
+                            <td class="class-cell jiu-jitsu" data-class="jiujitsu">
+                                <span class="class-name">Jiu-Jitsu</span>
+                                <button class="book-btn" data-class="Jiu-Jitsu" data-time="06:00-07:30" data-day="Monday">Book</button>
+                            </td>
+                            <td class="class-cell karate" data-class="karate">
+                                <span class="class-name">Karate</span>
+                                <button class="book-btn" data-class="Karate" data-time="06:00-07:30" data-day="Tuesday">Book</button>
+                            </td>
+                            <td class="class-cell judo" data-class="judo">
+                                <span class="class-name">Judo</span>
+                                <button class="book-btn" data-class="Judo" data-time="06:00-07:30" data-day="Wednesday">Book</button>
+                            </td>
+                            <td class="class-cell jiu-jitsu" data-class="jiujitsu">
+                                <span class="class-name">Jiu-Jitsu</span>
+                                <button class="book-btn" data-class="Jiu-Jitsu" data-time="06:00-07:30" data-day="Thursday">Book</button>
+                            </td>
+                            <td class="class-cell muay-thai" data-class="muaythai">
+                                <span class="class-name">Muay Thai</span>
+                                <button class="book-btn" data-class="Muay Thai" data-time="06:00-07:30" data-day="Friday">Book</button>
+                            </td>
+                            <td class="class-cell"></td>
+                            <td class="class-cell"></td>
+                        </tr>
+
+                        <!-- 08:00 - 10:00 -->
+                        <tr>
+                            <td class="time-slot">08:00 - 10:00</td>
+                            <td class="class-cell muay-thai" data-class="muaythai">
+                                <span class="class-name">Muay Thai</span>
+                                <button class="book-btn" data-class="Muay Thai" data-time="08:00-10:00" data-day="Monday">Book</button>
+                            </td>
+                            <td class="class-cell private" data-class="private">
+                                <span class="class-name">Private Tuition</span>
+                                <span class="class-note">By appointment</span>
+                            </td>
+                            <td class="class-cell private" data-class="private">
+                                <span class="class-name">Private Tuition</span>
+                                <span class="class-note">By appointment</span>
+                            </td>
+                            <td class="class-cell private" data-class="private">
+                                <span class="class-name">Private Tuition</span>
+                                <span class="class-note">By appointment</span>
+                            </td>
+                            <td class="class-cell jiu-jitsu" data-class="jiujitsu">
+                                <span class="class-name">Jiu-Jitsu</span>
+                                <button class="book-btn" data-class="Jiu-Jitsu" data-time="08:00-10:00" data-day="Friday">Book</button>
+                            </td>
+                            <td class="class-cell private" data-class="private">
+                                <span class="class-name">Private Tuition</span>
+                                <span class="class-note">By appointment</span>
+                            </td>
+                            <td class="class-cell private" data-class="private">
+                                <span class="class-name">Private Tuition</span>
+                                <span class="class-note">By appointment</span>
+                            </td>
+                        </tr>
+
+                        <!-- 10:30 - 12:00 -->
+                        <tr>
+                            <td class="time-slot">10:30 - 12:00</td>
+                            <td class="class-cell private" data-class="private">
+                                <span class="class-name">Private Tuition</span>
+                                <span class="class-note">By appointment</span>
+                            </td>
+                            <td class="class-cell private" data-class="private">
+                                <span class="class-name">Private Tuition</span>
+                                <span class="class-note">By appointment</span>
+                            </td>
+                            <td class="class-cell private" data-class="private">
+                                <span class="class-name">Private Tuition</span>
+                                <span class="class-note">By appointment</span>
+                            </td>
+                            <td class="class-cell private" data-class="private">
+                                <span class="class-name">Private Tuition</span>
+                                <span class="class-note">By appointment</span>
+                            </td>
+                            <td class="class-cell private" data-class="private">
+                                <span class="class-name">Private Tuition</span>
+                                <span class="class-note">By appointment</span>
+                            </td>
+                            <td class="class-cell judo" data-class="judo">
+                                <span class="class-name">Judo</span>
+                                <button class="book-btn" data-class="Judo" data-time="10:30-12:00" data-day="Saturday">Book</button>
+                            </td>
+                            <td class="class-cell karate" data-class="karate">
+                                <span class="class-name">Karate</span>
+                                <button class="book-btn" data-class="Karate" data-time="10:30-12:00" data-day="Sunday">Book</button>
+                            </td>
+                        </tr>
+
+                        <!-- 13:00 - 14:30 -->
+                        <tr>
+                            <td class="time-slot">13:00 - 14:30</td>
+                            <td class="class-cell open-mat" data-class="openmat">
+                                <span class="class-name">Open Mat</span>
+                                <span class="class-note">Personal practice</span>
+                            </td>
+                            <td class="class-cell open-mat" data-class="openmat">
+                                <span class="class-name">Open Mat</span>
+                                <span class="class-note">Personal practice</span>
+                            </td>
+                            <td class="class-cell open-mat" data-class="openmat">
+                                <span class="class-name">Open Mat</span>
+                                <span class="class-note">Personal practice</span>
+                            </td>
+                            <td class="class-cell open-mat" data-class="openmat">
+                                <span class="class-name">Open Mat</span>
+                                <span class="class-note">Personal practice</span>
+                            </td>
+                            <td class="class-cell open-mat" data-class="openmat">
+                                <span class="class-name">Open Mat</span>
+                                <span class="class-note">Personal practice</span>
+                            </td>
+                            <td class="class-cell karate" data-class="karate">
+                                <span class="class-name">Karate</span>
+                                <button class="book-btn" data-class="Karate" data-time="13:00-14:30" data-day="Saturday">Book</button>
+                            </td>
+                            <td class="class-cell judo" data-class="judo">
+                                <span class="class-name">Judo</span>
+                                <button class="book-btn" data-class="Judo" data-time="13:00-14:30" data-day="Sunday">Book</button>
+                            </td>
+                        </tr>
+
+                        <!-- 15:00 - 17:00 -->
+                        <tr>
+                            <td class="time-slot">15:00 - 17:00</td>
+                            <td class="class-cell kids" data-class="kids">
+                                <span class="class-name">Kids Jiu-Jitsu</span>
+                                <button class="book-btn" data-class="Kids Jiu-Jitsu" data-time="15:00-17:00" data-day="Monday">Book</button>
+                            </td>
+                            <td class="class-cell kids" data-class="kids">
+                                <span class="class-name">Kids Judo</span>
+                                <button class="book-btn" data-class="Kids Judo" data-time="15:00-17:00" data-day="Tuesday">Book</button>
+                            </td>
+                            <td class="class-cell kids" data-class="kids">
+                                <span class="class-name">Kids Karate</span>
+                                <button class="book-btn" data-class="Kids Karate" data-time="15:00-17:00" data-day="Wednesday">Book</button>
+                            </td>
+                            <td class="class-cell kids" data-class="kids">
+                                <span class="class-name">Kids Jiu-Jitsu</span>
+                                <button class="book-btn" data-class="Kids Jiu-Jitsu" data-time="15:00-17:00" data-day="Thursday">Book</button>
+                            </td>
+                            <td class="class-cell kids" data-class="kids">
+                                <span class="class-name">Kids Judo</span>
+                                <button class="book-btn" data-class="Kids Judo" data-time="15:00-17:00" data-day="Friday">Book</button>
+                            </td>
+                            <td class="class-cell muay-thai" data-class="muaythai">
+                                <span class="class-name">Muay Thai</span>
+                                <button class="book-btn" data-class="Muay Thai" data-time="15:00-17:00" data-day="Saturday">Book</button>
+                            </td>
+                            <td class="class-cell jiu-jitsu" data-class="jiujitsu">
+                                <span class="class-name">Jiu-Jitsu</span>
+                                <button class="book-btn" data-class="Jiu-Jitsu" data-time="15:00-17:00" data-day="Sunday">Book</button>
+                            </td>
+                        </tr>
+
+                        <!-- 17:30 - 19:00 -->
+                        <tr>
+                            <td class="time-slot">17:30 - 19:00</td>
+                            <td class="class-cell karate" data-class="karate">
+                                <span class="class-name">Karate</span>
+                                <button class="book-btn" data-class="Karate" data-time="17:30-19:00" data-day="Monday">Book</button>
+                            </td>
+                            <td class="class-cell muay-thai" data-class="muaythai">
+                                <span class="class-name">Muay Thai</span>
+                                <button class="book-btn" data-class="Muay Thai" data-time="17:30-19:00" data-day="Tuesday">Book</button>
+                            </td>
+                            <td class="class-cell judo" data-class="judo">
+                                <span class="class-name">Judo</span>
+                                <button class="book-btn" data-class="Judo" data-time="17:30-19:00" data-day="Wednesday">Book</button>
+                            </td>
+                            <td class="class-cell jiu-jitsu" data-class="jiujitsu">
+                                <span class="class-name">Jiu-Jitsu</span>
+                                <button class="book-btn" data-class="Jiu-Jitsu" data-time="17:30-19:00" data-day="Thursday">Book</button>
+                            </td>
+                            <td class="class-cell muay-thai" data-class="muaythai">
+                                <span class="class-name">Muay Thai</span>
+                                <button class="book-btn" data-class="Muay Thai" data-time="17:30-19:00" data-day="Friday">Book</button>
+                            </td>
+                            <td class="class-cell"></td>
+                            <td class="class-cell"></td>
+                        </tr>
+
+                        <!-- 19:00 - 21:00 -->
+                        <tr>
+                            <td class="time-slot">19:00 - 21:00</td>
+                            <td class="class-cell jiu-jitsu" data-class="jiujitsu">
+                                <span class="class-name">Jiu-Jitsu</span>
+                                <button class="book-btn" data-class="Jiu-Jitsu" data-time="19:00-21:00" data-day="Monday">Book</button>
+                            </td>
+                            <td class="class-cell judo" data-class="judo">
+                                <span class="class-name">Judo</span>
+                                <button class="book-btn" data-class="Judo" data-time="19:00-21:00" data-day="Tuesday">Book</button>
+                            </td>
+                            <td class="class-cell jiu-jitsu" data-class="jiujitsu">
+                                <span class="class-name">Jiu-Jitsu</span>
+                                <button class="book-btn" data-class="Jiu-Jitsu" data-time="19:00-21:00" data-day="Wednesday">Book</button>
+                            </td>
+                            <td class="class-cell karate" data-class="karate">
+                                <span class="class-name">Karate</span>
+                                <button class="book-btn" data-class="Karate" data-time="19:00-21:00" data-day="Thursday">Book</button>
+                            </td>
+                            <td class="class-cell private" data-class="private">
+                                <span class="class-name">Private Tuition</span>
+                                <span class="class-note">By appointment</span>
+                            </td>
+                            <td class="class-cell"></td>
+                            <td class="class-cell"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== BOOKING MODAL ===== -->
+    <div class="modal" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close booking modal">&times;</button>
+            <h2 id="modal-title">Confirm Booking</h2>
+            <div class="modal-body">
+                <p><strong>Class:</strong> <span id="modalClass">-</span></p>
+                <p><strong>Day:</strong> <span id="modalDay">-</span></p>
+                <p><strong>Time:</strong> <span id="modalTime">-</span></p>
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn-outline modal-cancel">Cancel</button>
+                <button class="btn btn-primary modal-confirm">Confirm Booking</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" >
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">🥋</span>
+                        <span class="logo-text">DoBu</span>
+                    </a>
+                    <p>DoBu Martial Arts is your premier destination for martial arts training, fitness, and self-defence in the heart of the city.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="timetable.html">Timetable</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="instructors.html">Instructors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Martial Arts Lane, City, State 12345</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@dobu.com">info@dobu.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Opening Hours</h4>
+                    <ul class="footer-hours">
+                        <li><span>Mon - Fri:</span> 06:00 - 21:00</li>
+                        <li><span>Saturday:</span> 08:00 - 20:00</li>
+                        <li><span>Sunday:</span> 08:00 - 18:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 DoBu Martial Arts. All rights reserved.</p>
+                <p>Designed with <i class="fas fa-heart" style="color: #c9a84c;"></i> by WebSpace</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/timetable.js"></script>
+</body>
+</html>

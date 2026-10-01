@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoBu Martial Arts - Train with Discipline and Confidence</title>
+    <meta name="description" content="DoBu Martial Arts offers martial arts classes, fitness training, and self-defence courses. Join us to train with discipline and confidence." >
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="css/responsive.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" >
+</head>
+<body>
+
+    <!-- ===== HEADER / NAVIGATION ===== -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <!-- Logo -->
+                <a href="index.html" class="logo" aria-label="DoBu Martial Arts Home">
+                    <span class="logo-icon">🥋</span>
+                    <span class="logo-text">DoBu</span>
+                </a>
+
+                <!-- Navigation -->
+                <nav class="nav" aria-label="Main Navigation">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="timetable.html">Timetable</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="instructors.html">Instructors</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Right Side: Login + Join Now (VISIBLE) -->
+                <div class="header-actions">
+                    <button class="search-toggle" aria-label="Search" aria-expanded="false">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <a href="login.html" class="btn btn-login btn-sm">Login</a>
+                    <a href="membership.html" class="btn btn-primary btn-sm">Join Now</a>
+                    <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">Since 2005</span>
+                <h1 id="hero-title">Train with <span>Discipline</span> and <span>Confidence</span></h1>
+                <p class="hero-subtitle">Martial Arts &bull; Fitness &bull; Self Defence</p>
+                <p class="hero-description">Join DoBu Martial Arts and transform your life through expert coaching, state-of-the-art facilities, and a supportive community.</p>
+                <div class="hero-buttons">
+                    <a href="membership.html" class="btn btn-primary btn-lg">Join Now <i class="fas fa-arrow-right"></i></a>
+                    <a href="classes.html" class="btn btn-outline-light btn-lg">Explore Classes</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-count="15">0</span>
+                        <span class="stat-label">Years of Excellence</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="500">0</span>
+                        <span class="stat-label">Active Members</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="6">0</span>
+                        <span class="stat-label">Expert Instructors</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WHY CHOOSE DOBU ===== -->
+    <section class="features section" aria-labelledby="features-title">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Why Choose DoBu</span>
+                <h2 id="features-title">Three Pillars of Excellence</h2>
+                <p class="section-subtitle">Discover what makes DoBu Martial Arts the premier choice for martial arts training.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hand-fist"></i>
+                    </div>
+                    <h3>Martial Arts</h3>
+                    <p>Expert coaching in Karate, Judo, Jiu-Jitsu, and Muay Thai for all skill levels.</p>
+                    <a href="classes.html" class="feature-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Fitness Training</h3>
+                    <p>State-of-the-art gym equipment and certified personal trainers to help you achieve your goals.</p>
+                    <a href="classes.html#fitness" class="feature-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <h3>Self Defence</h3>
+                    <p>Practical self-defence courses designed to keep you safe and build unshakeable confidence.</p>
+                    <a href="classes.html#self-defence" class="feature-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURED CLASSES ===== -->
+    <section class="featured-classes section bg-dark" aria-labelledby="classes-title">
+        <div class="container">
+            <div class="section-header text-center text-white">
+                <span class="section-tag">Our Classes</span>
+                <h2 id="classes-title">Featured Martial Arts</h2>
+                <p class="section-subtitle">Explore our comprehensive range of martial arts disciplines.</p>
+            </div>
+            <div class="classes-grid">
+                <!-- Karate -->
+                <div class="class-card">
+                    <div class="class-image">
+                        <img src="images/karate.jpg" alt="Karate class in action" loading="lazy" >
+                        <span class="class-badge">Popular</span>
+                    </div>
+                    <div class="class-content">
+                        <h3>Karate</h3>
+                        <p>Traditional Japanese martial art focusing on striking, kicking, and defensive techniques.</p>
+                        <div class="class-meta">
+                            <span><i class="far fa-clock"></i> 2× per week</span>
+                            <span><i class="fas fa-users"></i> All levels</span>
+                        </div>
+                        <a href="classes.html#karate" class="btn btn-outline btn-sm">View Class <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Judo -->
+                <div class="class-card">
+                    <div class="class-image">
+                        <img src="images/judo.jpg" alt="Judo class in action" loading="lazy" >
+                    </div>
+                    <div class="class-content">
+                        <h3>Judo</h3>
+                        <p>Olympic martial art specializing in throws, grappling, and ground fighting techniques.</p>
+                        <div class="class-meta">
+                            <span><i class="far fa-clock"></i> 2× per week</span>
+                            <span><i class="fas fa-users"></i> All levels</span>
+                        </div>
+                        <a href="classes.html#judo" class="btn btn-outline btn-sm">View Class <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Jiu-Jitsu -->
+                <div class="class-card">
+                    <div class="class-image">
+                        <img src="images/jiujitsu.jpg" alt="Jiu-Jitsu class in action" loading="lazy">
+                    </div>
+                    <div class="class-content">
+                        <h3>Jiu-Jitsu</h3>
+                        <p>Brazilian martial art focused on ground fighting, submissions, and leverage-based techniques.</p>
+                        <div class="class-meta">
+                            <span><i class="far fa-clock"></i> 2× per week</span>
+                            <span><i class="fas fa-users"></i> All levels</span>
+                        </div>
+                        <a href="classes.html#jiujitsu" class="btn btn-outline btn-sm">View Class <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Muay Thai -->
+                <div class="class-card">
+                    <div class="class-image">
+                        <img src="images/muaythai.jpg" alt="Muay Thai class in action" loading="lazy" >
+                    </div>
+                    <div class="class-content">
+                        <h3>Muay Thai</h3>
+                        <p>Thai "Art of Eight Limbs" using fists, elbows, knees, and shins for powerful strikes.</p>
+                        <div class="class-meta">
+                            <span><i class="far fa-clock"></i> 2× per week</span>
+                            <span><i class="fas fa-users"></i> All levels</span>
+                        </div>
+                        <a href="classes.html#muaythai" class="btn btn-outline btn-sm">View Class <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="classes.html" class="btn btn-primary">View All Classes <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MEMBERSHIP PROMOTION ===== -->
+    <section class="membership-promo section" aria-labelledby="promo-title">
+        <div class="container">
+            <div class="promo-content">
+                <div class="promo-text">
+                    <span class="section-tag">Membership</span>
+                    <h2 id="promo-title">Flexible Plans for <span>Every Journey</span></h2>
+                    <p>Whether you're a beginner or an advanced practitioner, we have a membership plan that fits your needs and budget.</p>
+                    <ul class="promo-features">
+                        <li><i class="fas fa-check-circle"></i> Access to all martial arts classes</li>
+                        <li><i class="fas fa-check-circle"></i> State-of-the-art fitness facilities</li>
+                        <li><i class="fas fa-check-circle"></i> Expert coaching from certified instructors</li>
+                        <li><i class="fas fa-check-circle"></i> Sauna, steam room, and changing facilities</li>
+                    </ul>
+                    <a href="membership.html" class="btn btn-primary btn-lg">View Memberships <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="promo-image">
+                    <img src="images/membership-promo.jpg" alt="DoBu Martial Arts gym facilities" loading="lazy" >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials section bg-light" aria-labelledby="testimonials-title">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Testimonials</span>
+                <h2 id="testimonials-title">What Our Members Say</h2>
+                <p class="section-subtitle">Real stories from real people who train at DoBu.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Joining DoBu was the best decision I've made. The coaches are incredible and the community is so supportive. I've grown so much in just 6 months."</p>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial1.jpg" alt="Sarah M." loading="lazy" >
+                        <div>
+                            <strong>Sarah M.</strong>
+                            <span>Jiu-Jitsu Member</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"The facilities are top-notch and the variety of classes means there's always something new to learn. My fitness has improved dramatically."</p>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial2.jpg" alt="James K." loading="lazy" >
+                        <div>
+                            <strong>James K.</strong>
+                            <span>Muay Thai & Fitness</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"The kids' classes are brilliant. My children have gained so much confidence and discipline. Highly recommend DoBu for families."</p>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial3.jpg" alt="Emma T." loading="lazy" >
+                        <div>
+                            <strong>Emma T.</strong>
+                            <span>Parent of Junior Members</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CALL TO ACTION ===== -->
+    <section class="cta-section" aria-labelledby="cta-title">
+        <div class="container">
+            <div class="cta-content">
+                <h2 id="cta-title">Ready to Start Your Journey?</h2>
+                <p>Join DoBu Martial Arts today and discover the warrior within. Your first class is free!</p>
+                <a href="membership.html" class="btn btn-gold btn-lg">Claim Your Free Class <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" >
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">🥋</span>
+                        <span class="logo-text">DoBu</span>
+                    </a>
+                    <p>DoBu Martial Arts is your premier destination for martial arts training, fitness, and self-defence in the heart of the city.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="timetable.html">Timetable</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="instructors.html">Instructors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Martial Arts Lane, City, State 12345</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@dobu.com">info@dobu.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Opening Hours</h4>
+                    <ul class="footer-hours">
+                        <li><span>Mon - Fri:</span> 06:00 - 21:00</li>
+                        <li><span>Saturday:</span> 08:00 - 20:00</li>
+                        <li><span>Sunday:</span> 08:00 - 18:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 DoBu Martial Arts. All rights reserved.</p>
+                <p>Designed with <i class="fas fa-heart" style="color: #c9a84c;"></i> by WebSpace</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

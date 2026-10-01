@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Contact DoBu Martial Arts</title>
+    <meta name="description" content="Get in touch with DoBu Martial Arts. Find our location, opening hours, phone, email, and send us a message." >
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="css/responsive.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ===== HEADER / NAVIGATION ===== -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo" aria-label="DoBu Martial Arts Home">
+                    <span class="logo-icon">🥋</span>
+                    <span class="logo-text">DoBu</span>
+                </a>
+                <nav class="nav" aria-label="Main Navigation">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="timetable.html">Timetable</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="instructors.html">Instructors</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button class="search-toggle" aria-label="Search" aria-expanded="false">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <a href="login.html" class="btn btn-outline-light btn-sm">Login</a>
+                    <a href="membership.html" class="btn btn-primary btn-sm">Join Now</a>
+                    <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you</p>
+        </div>
+    </section>
+
+    <!-- ===== CONTENT ===== -->
+    <section class="contact section" aria-labelledby="contact-title">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Details -->
+                <div class="contact-details">
+                    <h2 id="contact-title">Get in <span>Touch</span></h2>
+                    <p>Have questions? We're here to help. Reach out to us via phone, email, or visit us in person.</p>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <strong>Address</strong>
+                            <span>123 Martial Arts Lane,<br>City, State 12345</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <strong>Phone</strong>
+                            <span><a href="tel:+1234567890">+1 (234) 567-890</a></span>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <strong>Email</strong>
+                            <span><a href="mailto:info@dobu.com">info@dobu.com</a></span>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <strong>Opening Hours</strong>
+                            <span>Mon - Fri: 06:00 - 21:00</span>
+                            <span>Saturday: 08:00 - 20:00</span>
+                            <span>Sunday: 08:00 - 18:00</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="contactName">Full Name <span class="required">*</span></label>
+                            <input type="text" id="contactName" name="name" placeholder="John Doe" required >
+                            <span class="form-error" data-error="name">Please enter your name</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address <span class="required">*</span></label>
+                            <input type="email" id="contactEmail" name="email" placeholder="john@example.com" required >
+                            <span class="form-error" data-error="email">Please enter a valid email address</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactPhone">Phone Number</label>
+                            <input type="tel" id="contactPhone" name="phone" placeholder="+1 (234) 567-890" >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactSubject">Subject <span class="required">*</span></label>
+                            <select id="contactSubject" name="subject" required>
+                                <option value="">Select a subject...</option>
+                                <option value="general">General Enquiry</option>
+                                <option value="membership">Membership Enquiry</option>
+                                <option value="classes">Class Enquiry</option>
+                                <option value="booking">Booking Enquiry</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="form-error" data-error="subject">Please select a subject</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">Message <span class="required">*</span></label>
+                            <textarea id="contactMessage" name="message" rows="5" placeholder="Your message here..." required></textarea>
+                            <span class="form-error" data-error="message">Please enter a message (at least 10 characters)</span>
+                        </div>
+
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="contactConsent" required>
+                            <label for="contactConsent">I consent to DoBu Martial Arts storing my data for the purpose of responding to my enquiry.</label>
+                            <span class="form-error" data-error="consent">You must consent to data storage</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg">Send Message <i class="fas fa-arrow-right"></i></button>
+                        <div class="form-success" style="display:none;">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Thank you! Your message has been sent. We'll get back to you within 24 hours.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MAP ===== -->
+    <section class="map-section" aria-label="Location map">
+        <div class="map-wrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.305935303!2d-74.25986548205856!3d40.69714941532639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2suk!4v1649088812345!5m2!1sen!2suk" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="DoBu Martial Arts location map"></iframe>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">🥋</span>
+                        <span class="logo-text">DoBu</span>
+                    </a>
+                    <p>DoBu Martial Arts is your premier destination for martial arts training, fitness, and self-defence in the heart of the city.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="timetable.html">Timetable</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="instructors.html">Instructors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Martial Arts Lane, City, State 12345</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@dobu.com">info@dobu.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Opening Hours</h3>
+                    <ul class="footer-hours">
+                        <li><span>Mon - Fri:</span> 06:00 - 21:00</li>
+                        <li><span>Saturday:</span> 08:00 - 20:00</li>
+                        <li><span>Sunday:</span> 08:00 - 18:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 DoBu Martial Arts. All rights reserved.</p>
+                <p>Designed with <i class="fas fa-heart" style="color: #c9a84c;"></i> by WebSpace</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

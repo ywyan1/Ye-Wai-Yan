@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Login - DoBu Martial Arts Member Portal</title>
+    <meta name="description" content="Login to your DoBu Martial Arts member account to manage your membership, book classes, and more." >
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="css/responsive.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" >
+</head>
+<body class="auth-page">
+
+    <!-- ===== AUTH CONTAINER ===== -->
+    <div class="auth-container">
+        <div class="auth-card">
+            <a href="index.html" class="auth-logo" aria-label="DoBu Home">
+                <span class="logo-icon">🥋</span>
+                <span class="logo-text">DoBu</span>
+            </a>
+
+            <h1>Member Login</h1>
+            <p class="auth-subtitle">Welcome back! Please login to your account.</p>
+
+            <form id="loginForm" novalidate>
+                <div class="form-group">
+                    <label for="loginEmail">Email Address</label>
+                    <input type="email" id="loginEmail" placeholder="john@example.com" required >
+                    <span class="form-error" data-error="email">Please enter your email address</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="loginPassword" placeholder="Enter your password" required >
+                        <button type="button" class="password-toggle" aria-label="Toggle password visibility">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    <span class="form-error" data-error="password">Please enter your password</span>
+                </div>
+
+                <div class="form-options">
+                    <label class="checkbox">
+                        <input type="checkbox" > Remember me
+                    </label>
+                    <a href="#" class="forgot-link">Forgot password?</a>
+                </div>
+
+                <div class="form-error-global" style="display:none;">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>Invalid email or password. Please try again.</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Login <i class="fas fa-arrow-right"></i></button>
+
+                <div class="auth-divider">
+                    <span>or</span>
+                </div>
+
+                <p class="auth-footer">New to DoBu? <a href="register.html">Create an account</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

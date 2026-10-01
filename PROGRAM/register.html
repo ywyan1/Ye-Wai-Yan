@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Register - Join DoBu Martial Arts</title>
+    <meta name="description" content="Create your DoBu Martial Arts member account and start your martial arts journey today." >
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="css/responsive.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" >
+</head>
+<body class="auth-page">
+
+    <!-- ===== AUTH CONTAINER ===== -->
+    <div class="auth-container">
+        <div class="auth-card">
+            <a href="index.html" class="auth-logo">
+                <span class="logo-icon">🥋</span>
+                <span class="logo-text">DoBu</span>
+            </a>
+
+            <h1>Create Account</h1>
+            <p class="auth-subtitle">Start your martial arts journey with us.</p>
+
+            <!-- Step Indicator -->
+            <div class="registration-steps">
+                <div class="step active" data-step="1">
+                    <span class="step-number">1</span>
+                    <span class="step-label">Plan</span>
+                </div>
+                <div class="step" data-step="2">
+                    <span class="step-number">2</span>
+                    <span class="step-label">Martial Art</span>
+                </div>
+                <div class="step" data-step="3">
+                    <span class="step-number">3</span>
+                    <span class="step-label">Details</span>
+                </div>
+                <div class="step" data-step="4">
+                    <span class="step-number">4</span>
+                    <span class="step-label">Review</span>
+                </div>
+                <div class="step" data-step="5">
+                    <span class="step-number">5</span>
+                    <span class="step-label">Confirm</span>
+                </div>
+            </div>
+
+            <!-- Step 1: Select Plan -->
+            <form id="registerForm" novalidate>
+                <div class="register-step" data-step="1">
+                    <h2>Select Your Membership Plan</h2>
+                    <div class="plan-select-grid">
+
+                        <label class="plan-select">
+                            <input type="radio" name="plan" value="basic">
+
+                            <span class="plan-select-card">
+                                <strong>Basic</strong>
+                                <span>£25/month</span>
+                                <small>1 martial art, 2 sessions/week</small>
+                            </span>
+                        </label>
+
+                         <label class="plan-select">
+                            <input type="radio" name="plan" value="intermediate">
+
+                            <span class="plan-select-card">
+                                <strong>Intermediate</strong>
+                                <span>£35/month</span>
+                                <small>1 martial art, 3 sessions/week</small>
+                            </span>
+                        </label>
+
+                        <label class="plan-select">
+                            <input type="radio" name="plan" value="advanced">
+                            <span class="plan-select-card">
+                                <strong>Advanced</strong>
+                                <span>£45/month</span>
+                                <small>Any arts, 5 sessions/week</small>
+                            </span>
+                        </label>
+
+                         <label class="plan-select">
+                            <input type="radio" name="plan" value="elite">
+                            <span class="plan-select-card">
+                                <strong>Elite</strong>
+                                <span>£60/month</span>
+                                <small>Unlimited Classes</small>
+                            </span>
+                        </label>
+
+                         <label class="plan-select">
+                            <input type="radio" name="plan" value="junior">
+                            <span class="plan-select-card">
+                                <strong>Junior</strong>
+                                <span>£25/month</span>
+                                <small>All kids classes</small>
+                            </span>
+                        </label>
+                    </div>
+                    <span class="form-error" data-error="plan">Please select a membership plan</span>
+                    <div class="step-actions">
+                        <button type="button" class="btn btn-primary btn-next">Next <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Select Martial Art -->
+                <div class="register-step" data-step="2" style="display:none;">
+                    <h3>Choose Your Martial Art</h3>
+                    <div class="martial-select-grid">
+                        <label class="martial-select">
+                            <input type="checkbox" name="arts" value="karate" >
+                            <span>Karate</span>
+                        </label>
+                        <label class="martial-select">
+                            <input type="checkbox" name="arts" value="judo" >
+                            <span>Judo</span>
+                        </label>
+                        <label class="martial-select">
+                            <input type="checkbox" name="arts" value="jiujitsu" >
+                            <span>Jiu-Jitsu</span>
+                        </label>
+                        <label class="martial-select">
+                            <input type="checkbox" name="arts" value="muaythai" >
+                            <span>Muay Thai</span>
+                        </label>
+                    </div>
+                    <span class="form-error" data-error="arts">Please select at least one martial art</span>
+                    <div class="step-actions">
+                        <button type="button" class="btn btn-outline btn-prev">Back</button>
+                        <button type="button" class="btn btn-primary btn-next">Next <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Personal Details -->
+                <div class="register-step" data-step="3" style="display:none;">
+                    <h3>Personal Details</h3>
+                    <div class="form-group">
+                        <label for="regFirstName">First Name</label>
+                        <input type="text" id="regFirstName" required >
+                        <span class="form-error" data-error="firstName">Please enter your first name</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="regLastName">Last Name</label>
+                        <input type="text" id="regLastName" required >
+                        <span class="form-error" data-error="lastName">Please enter your last name</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="regEmail">Email Address</label>
+                        <input type="email" id="regEmail" required >
+                        <span class="form-error" data-error="email">Please enter a valid email address</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="regPhone">Phone Number</label>
+                        <input type="tel" id="regPhone" >
+                    </div>
+                    <div class="form-group">
+                        <label for="regDob">Date of Birth</label>
+                        <input type="date" id="regDob" required >
+                        <span class="form-error" data-error="dob">Please enter your date of birth</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="regPassword">Password</label>
+                        <input type="password" id="regPassword" required minlength="8" >
+                        <span class="form-error" data-error="password">Password must be at least 8 characters</span>
+                    </div>
+                    <div class="step-actions">
+                        <button type="button" class="btn btn-outline btn-prev">Back</button>
+                        <button type="button" class="btn btn-primary btn-next">Next <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Step 4: Review -->
+                <div class="register-step" data-step="4" style="display:none;">
+                    <h3>Review Your Application</h3>
+                    <div class="review-summary">
+                        <p><strong>Plan:</strong> <span id="reviewPlan">-</span></p>
+                        <p><strong>Martial Arts:</strong> <span id="reviewArts">-</span></p>
+                        <p><strong>Name:</strong> <span id="reviewName">-</span></p>
+                        <p><strong>Email:</strong> <span id="reviewEmail">-</span></p>
+                        <p><strong>Date of Birth:</strong> <span id="reviewDob">-</span></p>
+                    </div>
+                    <div class="step-actions">
+                        <button type="button" class="btn btn-outline btn-prev">Back</button>
+                        <button type="submit" class="btn btn-gold btn-next">Confirm & Register <i class="fas fa-check"></i></button>
+                    </div>
+                </div>
+
+                <!-- Step 5: Success -->
+                <div class="register-step" data-step="5" style="display:none;">
+                    <div class="success-content">
+                        <i class="fas fa-check-circle" style="font-size: 64px; color: #2ecc71;"></i>
+                        <h3>Registration Complete!</h3>
+                        <p>Welcome to DoBu Martial Arts! We've sent a confirmation email to your inbox.</p>
+                        <p>You can now <a href="login.html">login</a> to your account and start booking classes.</p>
+                        <a href="index.html" class="btn btn-primary">Go to Homepage</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
